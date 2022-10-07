@@ -16,7 +16,12 @@ namespace _2104_Sep2022
             TestAssignment2.test2();
         }
 
-        private void TestRunGenericFunctions()
+
+           // CLASS EXAMPLES BELOW
+
+
+
+/*        private void TestRunGenericFunctions()
         {
             var arrInt = new int[] { 5, 6, 7 };
             var arrStr = new string[] { "aaa", "bbb", "ccc" };
@@ -36,7 +41,7 @@ namespace _2104_Sep2022
                 new Developer("I450", StandardEmployeeType.Parttime, 2021)
             };
 
-            Program.Reset<Employee>(arrEmployee);
+            Program.Reset<Employee>(arrEmployee);*/
 
             //var a = "strA";
             //var b = "strB";
