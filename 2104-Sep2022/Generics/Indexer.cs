@@ -12,7 +12,7 @@ namespace _2104_Sep2022.Generics
     /// <typeparam name="TKey"></typeparam>
     /// <typeparam name="TSubKey"></typeparam>
     /// <typeparam name="TValue"></typeparam>
-    public class Indexer<TKey, TSubKey, TValue> where TValue : Employee , ISalaryCalculator
+    public class Indexer<TKey, TSubKey, TValue> where TValue : Employee
     {
         private TValue _currentValue;
         private int _index;
@@ -26,11 +26,6 @@ namespace _2104_Sep2022.Generics
         public TValue GetCurrent()
         {
             return this._currentValue;
-        }
-
-        public double GetSalary(TKey key, TSubKey subKey)
-        {
-            return _currentValue.Calculate();
         }
     }
 }

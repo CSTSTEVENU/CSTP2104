@@ -8,7 +8,7 @@ namespace _2104_Sep2022.Week2Ex
     {
         public double Calculate()
         {
-            double salary = 20;
+            double salary = 0;
 
             return salary;
         }

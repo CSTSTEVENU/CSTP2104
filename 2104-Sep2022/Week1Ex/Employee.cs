@@ -1,11 +1,10 @@
-﻿using _2104_Sep2022.Week2Ex;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace _2104_Sep2022.Week1Quiz
 {
-    public abstract class Employee : ISalaryCalculator
+    public abstract class Employee // : IEquatable<Employee>
     {
         public string ID { get; private set; }
 

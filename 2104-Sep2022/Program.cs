@@ -1,5 +1,4 @@
-﻿using _2104_Sep2022.Assignment2;
-using _2104_Sep2022.Generics;
+﻿using _2104_Sep2022.Generics;
 using _2104_Sep2022.Week1Ex;
 using _2104_Sep2022.Week1Quiz;
 using _2104_Sep2022.Week2Ex;
@@ -13,15 +12,37 @@ namespace _2104_Sep2022
     {
         static void Main(string[] args)
         {
-            TestAssignment2.test2();
+            var examineDelegate = new ExamineDelegates();
+            examineDelegate.CalculateAreaUsingGenericDelegate();
+            examineDelegate.CalculateAreaUsingGenericDelegate2();
+
+            // examineDelegate.MulticastDelegateExample2();
+
+            // examineDelegate.CalculateSquareAreasExample();
+
+            // Static method
+            // ExamineDelegates.CalculateSquareArea(4);
+
+            /// examineDelegate.SimpleDelegate();
         }
 
+        //    var examineDelegate = new ExamineDelegates();
+        //    examineDelegate.SimpleDelegate();
 
-           // CLASS EXAMPLES BELOW
+        //    // new TestMember().BasicEqualityTest();
+        //     new Program().TestNonGenericStack();
+        //    new Program().TestGenericStack();
+        //    // interface example
+        //    // new TestCountdown().BasicTest();
+        //    // new TestCountdown().ResetTest();
+        //    // new TestCountdown().UseLikeInterfaceTest();
 
+        //    // new Program().TestPolymorphicFunction();
+        //    // new Program().TestCasting();
+        //    // new Program().TestVirtualFunc();
+        //
 
-
-/*        private void TestRunGenericFunctions()
+        private void TestRunGenericFunctions()
         {
             var arrInt = new int[] { 5, 6, 7 };
             var arrStr = new string[] { "aaa", "bbb", "ccc" };
@@ -41,7 +62,7 @@ namespace _2104_Sep2022
                 new Developer("I450", StandardEmployeeType.Parttime, 2021)
             };
 
-            Program.Reset<Employee>(arrEmployee);*/
+            Program.Reset<Employee>(arrEmployee);
 
             //var a = "strA";
             //var b = "strB";
@@ -73,11 +94,11 @@ namespace _2104_Sep2022
 
             Indexer<string, string, Developer> indexer = new Indexer<string, string, Developer>();
             Indexer<string, string, ProjectManager> indexer2 = new Indexer<string, string, ProjectManager>();
-            SalaryIndexer<string, string, Employee> salaryIndexer = new SalaryIndexer<string, string, Employee>();
+
         }
 
         /// <summary>
-        /// Generics gets rid of all these copies of the same 
+        /// Generics gets rid of all these copies of the same
         /// function which differ only by the type of the input parameter
         /// </summary>
         /// <param name="a"></param>
@@ -231,7 +252,7 @@ namespace _2104_Sep2022
             if (employee2 is ProjectManager)
             {
                 Console.WriteLine( ((ProjectManager)employee2).HourlyRate);
-                
+
                 // ((ProjectManager)employee).HourlyRate in multiple lines
                 var pm = (ProjectManager)employee2;
                 var rate = pm.HourlyRate;
