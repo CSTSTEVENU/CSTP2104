@@ -15,7 +15,7 @@ namespace _2104_Sep2022
         static void Main(string[] args)
         {
 
-            // Assignment 3
+            // Assignment 3 ** CODE DOES NOT RUN **
 
             EmployeePayroll e1 = new EmployeePayroll("M001", 23, 50);
             EmployeePayroll e2 = new EmployeePayroll("S001", 40, 40);
