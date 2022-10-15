@@ -1,10 +1,12 @@
-﻿using _2104_Sep2022.Generics;
+﻿using _2104_Sep2022.Assignment_3;
+using _2104_Sep2022.Generics;
 using _2104_Sep2022.Week1Ex;
 using _2104_Sep2022.Week1Quiz;
 using _2104_Sep2022.Week2Ex;
 using _2104_Sep2022.Week5Ex;
 using System;
 using System.Collections.Generic;
+using static _2104_Sep2022.Assignment_3.SalaryCalculator2;
 
 namespace _2104_Sep2022
 {
@@ -12,9 +14,32 @@ namespace _2104_Sep2022
     {
         static void Main(string[] args)
         {
-            var examineDelegate = new ExamineDelegates();
+
+            // Assignment 3
+
+            EmployeePayroll e1 = new EmployeePayroll("M001", 23, 50);
+            EmployeePayroll e2 = new EmployeePayroll("S001", 40, 40);
+            EmployeePayroll e3 = new EmployeePayroll("M002", 38, 52.50);
+            EmployeePayroll e4 = new EmployeePayroll("S011", 23, 43.50);
+            EmployeePayroll e5 = new EmployeePayroll("M023", 34, 42);
+
+            
+            SalaryDelegate salaryCalculator = SalaryCalculator2.CalculateSalary;
+            EmployeePayroll[] employees = { e1, e2, e3, e4, e5 };
+
+            foreach(EmployeePayroll employed in employees)
+            {
+                var payField = salaryCalculator(employed.ID, employed.Hours, employed.Rate,employed.Pay);
+                employed.Pay = payField;
+
+                Console.WriteLine("Employee Name: " + employed.ID + "Employee Hours: " + employed.Hours + "Employee Rate: " + employed.Rate + "Employee Pay: " + employed.Pay);
+
+            }
+
+
+            /*var examineDelegate = new ExamineDelegates();
             examineDelegate.CalculateAreaUsingGenericDelegate();
-            examineDelegate.CalculateAreaUsingGenericDelegate2();
+            examineDelegate.CalculateAreaUsingGenericDelegate2();*/
 
             // examineDelegate.MulticastDelegateExample2();
 

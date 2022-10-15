@@ -10,7 +10,7 @@ namespace _2104_Sep2022.Assignment2
     {
         public static void test2()
         {
-            SalaryIndexer<string, string, Employee> salaryIndexer = new SalaryIndexer<string, string, Employee>();
+            /*SalaryIndexer<string, string, Employee> salaryIndexer = new SalaryIndexer<string, string, Employee>();*/
 
             ISalaryCalculator salaryCalculator = new SalaryCalculator();
 

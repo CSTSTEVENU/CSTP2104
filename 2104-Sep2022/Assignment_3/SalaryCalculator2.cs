@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static _2104_Sep2022.Assignment_3.SalaryCalculator2;
 
 namespace _2104_Sep2022.Assignment_3
 {
@@ -15,7 +14,7 @@ namespace _2104_Sep2022.Assignment_3
         {
             SalaryDelegate salaryDelegate = CalculateSalary;
 
-            var result = salaryDelegate("Steven", 200, 40, 80.2);
+            var result = salaryDelegate("Mario", 200, 40, 80.2);
 
             Console.WriteLine(result);
         }
@@ -35,38 +34,27 @@ namespace _2104_Sep2022.Assignment_3
 
         // Assignment 3 Part 2
 
-        public void EmployeeList()
-        {   
-            List<EmployeePayroll> employeeList = new List<EmployeePayroll>();
+    }
+    public class EmployeePayroll
+    {
+        private string v1;
+        private double v2;
+        private double v3;
+
+        public EmployeePayroll(string v1, double v2, double v3)
         {
-               var e1 = new EmployeePayroll { ID = "M001", Hours = 23, Rate = 50, Pay = 0 };
-               var e2 = new EmployeePayroll { ID = "S001", Hours = 40, Rate = 40, Pay = 0 };
-               var e3 = new EmployeePayroll { ID = "M002", Hours = 38, Rate = 52.50, Pay = 0 };
-               var e4 = new EmployeePayroll { ID = "S011", Hours = 42, Rate = 43.50, Pay = 0 };
-               var e5 = new EmployeePayroll { ID = "M023", Hours = 34, Rate = 42, Pay = 0 };
-
-
-                employeeList.Add(e1);
-                employeeList.Add(e2);
-                employeeList.Add(e3);
-                employeeList.Add(e4);
-                employeeList.Add(e5);
-
-                Console.WriteLine(employeeList);
-     
-            };
+            this.v1 = v1;
+            this.v2 = v2;
+            this.v3 = v3;
         }
 
-        public class EmployeePayroll
-        {
-            public string ID { get; set; }
-            public int Hours { get; set; }
+        public string ID { get; set; }
 
-            public double Rate { get; set; }
+        public int Hours { get; set; }
 
-            public double Pay { get; set; }
+        public double Rate { get; set; }
 
-        }
+        public double Pay { get; set; }
 
     }
 }
