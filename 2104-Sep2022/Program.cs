@@ -1,4 +1,5 @@
 ﻿using _2104_Sep2022.Assignment_3;
+using _2104_Sep2022.Assignment4;
 using _2104_Sep2022.Generics;
 using _2104_Sep2022.Week1Ex;
 using _2104_Sep2022.Week1Quiz;
@@ -15,9 +16,39 @@ namespace _2104_Sep2022
         static void Main(string[] args)
         {
 
+            // Assignment 4
+            
+            // Part 1
+            MyIntListData N = new MyIntListData();
+
+            foreach (MyIntegerList n in N)
+                Console.WriteLine(n.Year + "\t\t" + n.Grade + "\n");
+
+            // Part 1
+
+            // Part 2
+
+            MyList<string> myListOfStrings = new MyList<string>();
+
+            myListOfStrings.Add("First Item");
+            myListOfStrings.Add("Second Item");
+            myListOfStrings.Add("Third Item");
+            myListOfStrings.Add("Fourth Item");
+
+            foreach (string stringItem in myListOfStrings)
+            {
+                Console.WriteLine("\n" + stringItem);
+            }
+
+            // Part 2
+
+            // Assignment 4
+
+            // ############ //
+
             // Assignment 3
 
-            EmployeePayroll e1 = new EmployeePayroll("M001", 23, 50);
+            /*EmployeePayroll e1 = new EmployeePayroll("M001", 23, 50);
             EmployeePayroll e2 = new EmployeePayroll("S001", 40, 40);
             EmployeePayroll e3 = new EmployeePayroll("M002", 38, 52.50);
             EmployeePayroll e4 = new EmployeePayroll("S011", 23, 43.50);
@@ -34,8 +65,9 @@ namespace _2104_Sep2022
 
                 Console.WriteLine("Employee Name: " + employed.ID + "Employee Hours: " + employed.Hours + "Employee Rate: " + employed.Rate + "Employee Pay: " + employed.Pay);
 
-            }
+            }*/
 
+            // Assignment 3
 
             /*var examineDelegate = new ExamineDelegates();
             examineDelegate.CalculateAreaUsingGenericDelegate();
