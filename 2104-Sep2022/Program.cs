@@ -16,8 +16,8 @@ namespace _2104_Sep2022
     {
         static void Main(string[] args)
         {
-            var testAccessDB = new TestAccessDB();
-            testAccessDB.TestSelect();
+            var employeeSqlDB = new EmployeeRepository();
+            employeeSqlDB.Get(10);
 
 
             // Assignment 4

@@ -15,7 +15,7 @@ namespace _2104_Sep2022.Assignment5
         public string GetConnectionString()
         {
             var appConfigReader = new AppConfigReader();
-            // appConfigReader.ReadConnectionStrings();
+            appConfigReader.ReadConnectionStrings();
 
             var connString = appConfigReader.GetConnctionString("Project1Dev");
             if (string.IsNullOrWhiteSpace(connString))
@@ -30,14 +30,14 @@ namespace _2104_Sep2022.Assignment5
         {
             SqlConnection connection = new SqlConnection(GetConnectionString());
             connection.Open();
-            string sqlCommandText = $"SELECT TOP{Count} * FROM EMPLOYEE";
+            string sqlCommandText = "SELECT TOP 10 * FROM EMPLOYEE";
 
             SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommandText, connection);
             DataTable dataTable = new DataTable();
 
             dataAdapter.Fill(dataTable);
 
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in dataTable.Rows) 
             {
                 Console.WriteLine($"Row: EmployeeID: {row["eID"]}, EmployeeName: {row["eName"]} EmployeeAddress: {row["eAddress"]} PhoneNumber: {row["PhoneNumber"]} VacationDays: {row["eVacationDays"]} StartYear: {row["eStartYear"]} EmployeeSalary: {row["eSalary"]}");
             }
@@ -55,6 +55,7 @@ namespace _2104_Sep2022.Assignment5
             }
 
             return employees;
+            Console.WriteLine(employees);
 
             connection.Close();
 
