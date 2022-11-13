@@ -1,5 +1,6 @@
 ﻿using _2104_Sep2022.Assignment_3;
 using _2104_Sep2022.Assignment4;
+using _2104_Sep2022.Assignment5;
 using _2104_Sep2022.Generics;
 using _2104_Sep2022.Week1Ex;
 using _2104_Sep2022.Week1Quiz;
@@ -15,11 +16,14 @@ namespace _2104_Sep2022
     {
         static void Main(string[] args)
         {
+            var testAccessDB = new TestAccessDB();
+            testAccessDB.TestSelect();
+
 
             // Assignment 4
             
             // Part 1
-            MyIntListData N = new MyIntListData();
+/*            MyIntListData N = new MyIntListData();
 
             foreach (MyIntegerList n in N)
                 Console.WriteLine(n.Year + "\t\t" + n.Grade + "\n");
@@ -38,7 +42,7 @@ namespace _2104_Sep2022
             foreach (string stringItem in myListOfStrings)
             {
                 Console.WriteLine("\n" + stringItem);
-            }
+            }*/
 
             // Part 2
 

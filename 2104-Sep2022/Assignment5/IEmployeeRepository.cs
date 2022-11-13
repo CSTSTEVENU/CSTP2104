@@ -9,7 +9,9 @@ namespace _2104_Sep2022.Assignment5
 {
     public interface IEmployeeRepository
     {
-            List<Employee> Get(int Count = 10);
+        string GetConnectionString();
+
+        List<Employee> Get(int Count = 10);
     }
 }
 
