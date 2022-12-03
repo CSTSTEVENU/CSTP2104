@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="UWPApp1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPApp1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid BorderThickness="25,25,25,25">
+        
+        <TextBlock x:Name="Title_Label" TextWrapping="Wrap" Text="Company Title - App Name - Screen Name" HorizontalAlignment="Left"/>
+        <TextBox x:Name="Search_tbx" TextWrapping="Wrap" Text="Search" Margin="0,40,0,-40" BorderThickness="10,10,10,10"/>
+        <TextBlock x:Name="Contact_Searchtbk" HorizontalAlignment="Left" Margin="10,135,0,0" TextWrapping="Wrap" Text="Contact Search" VerticalAlignment="Top" Height="399" Width="264"/>
+        <Button x:Name="Add_Button" Content="Add" Margin="10,84,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Edit_Button" Content="Edit" Margin="101,80,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Delete_Button" Content="Delete" Margin="202,80,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="ID_Label" HorizontalAlignment="Left" Margin="360,126,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Name_Label" HorizontalAlignment="Left" Margin="360,171,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Address_Label" HorizontalAlignment="Left" Margin="360,221,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top"/>
+        <TextBlock x:Name="PN_Label" HorizontalAlignment="Left" Margin="360,280,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Role_Label" HorizontalAlignment="Left" Margin="360,341,0,0" TextWrapping="Wrap" Text="Role" VerticalAlignment="Top"/>
+        <TextBox x:Name="ID_tbx" HorizontalAlignment="Left" Margin="487,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="Name_tbx" HorizontalAlignment="Left" Margin="487,164,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="Address_tbx" HorizontalAlignment="Left" Margin="487,214,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="PN_tbx" HorizontalAlignment="Left" Margin="487,273,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="Role_tbx" HorizontalAlignment="Left" Margin="487,334,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="Cancel_Button" Content="Cancel" Margin="360,425,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.048,0"/>
+        <Button x:Name="Save_Button" Content="Save" Margin="525,425,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.048,0"/>
+
+    </Grid>
+</Page>
