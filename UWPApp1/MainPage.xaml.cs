@@ -27,5 +27,9 @@ namespace UWPApp1
             this.InitializeComponent();
         }
 
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
