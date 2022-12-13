@@ -1,0 +1,193 @@
+2104 - FINAL EXAM - STEVEN UHM - 000455287
+
+1) Class DelegateTest {
+	
+	public delegate bool myDelegate(string message1, string message2);
+
+	public static bool delegateTest(string message1, string message2)
+	{
+		if (message1.Length && message2.Length < 7)
+		{
+			return true;
+		}
+	
+		else
+		{
+			return false;
+
+		}
+	}
+
+	public static void Main()
+	{
+		myDelegate delegateObj = delegateTest
+		Console.WriteLine(delegateObj("Test1","Test2"));
+	}
+}
+	
+
+
+2) public class equalDelegates
+{
+
+	delegate void message1();
+	delegate void message2();
+
+   public void testDelegateMethods() {}
+
+   public void TestingDelegates()
+	{
+		message1 first = new message1(this.testDelegateMethods);
+		message2 second = new message2(this.testDelegateMethods);
+		bool AreEqual = Object.Equals(first,second);
+		if (AreEqual)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}
+	
+3)  WINUI layout panels - RelativePanel, Grid, StackPanel
+
+   <RelativePanel>
+	<Rectangle Height="20> Width="20/>
+   </RelativePanel>
+
+   <Grid>
+   <Grid.RowDefinitions>
+	<RowDefinition Height="20"/>
+   </Grid.RowDefinitions>
+   <Rectangle Height="20" Width="20"/>
+   </Grid>
+
+   <StackPanel>
+	<Rectangle Height="20" Width="20/>
+   </StackPanel>
+
+4) <Grid>
+   	<Grid.RowDefinitions>
+		<RowDefinition/>
+		<RowDefinition/>
+		<RowDefinition/>
+	</Grid.RowDefinitons>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition/>
+		<ColumnDefinition Width="40"/>
+		<ColumnDefinition/>
+	</Grid.ColumnDefintions>
+	<TextBox Grid.Column="1" Grid.Row="3"/>
+	<ListView Grid.Golumn="3" Grid.Row="3"/>
+	</ListView>
+    </Grid>
+
+5) B - False 
+
+6) D - In inheritance, if both the base class and the derived class have a function with the same name, 
+	   we can use the base keyword to implicitly call the function of the base class.
+
+7) C - If a member variable is declared as protected, it can be accessed throughout the namespace.
+
+8) A - Method Overloading
+
+9) D - Override
+
+10) C - Private
+
+11) A - True
+
+12) C - A compile-time error is raised
+
+13) Public class CollectionEnum
+{	
+
+	// creating class
+	public IEnumerable<int> _enumCollection;
+	
+	// Constructor to accept intial collection 
+	public IntCollectionMethod(IEnumerable<int> enumCollection)
+	{
+	  _enumCollection = enumCollection;
+	}
+	
+	// returns collection list
+	public IEnumberable<int> returnCollection
+	{
+	  return _enumCollection;
+	}
+	
+	// creating function filter for boundary values beyond parameters
+	// returns result as a list with average
+	
+    	public IEnumerable<int> filtering_Values(int lowerBoundary, int upperBoundary)
+    	{
+        	return _enumCollection.Where(value >= lowerBoundary && value <= upperBoundary);
+    	}
+
+	// creating function that adds interger values
+	public IEnumerable<int> add_Range(int lowerRange, int upperRange)
+    	{
+        
+	// creating variable to return added integer values 		
+	var range_sum = enumerable.range(lowerRange, upperRange - lowerRange + 1);
+	
+	// returning resulting list
+        return _enumCollection(range_sum);
+    
+	}
+}
+
+14) 
+
+// CREATED STUDENT CLASS
+
+public class Student {
+
+	string StudentID;
+        string StudentName;
+        string Email Address;
+        string Phone Number;
+        string Address;
+        string City;
+        string Country;
+        string PostalCode;
+        int RegistrationYear;
+}
+
+// ENCAPSULATION
+
+    public class StudentRegisterFields {
+	
+	public string StudentID { get; set; }
+        public string StudentName { get; set; }
+        public string EmailAddress { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public string PostalCode { get; set; }
+        public int RegistrationYear { get; set; }
+}
+	
+// CONSTRUCTOR AND VALIDATION
+
+   public StudentLogin 
+	{ 
+		public StudentLogin(string StudentID, string EmailAddress, string StudentName, int RegistrationYear)
+		{
+			if (String.IsNullorEmpty(StudentID))
+				throw new ArgumentException("Student ID cannot be empty");
+			if (String.IsNullorEmpty(EmailAddress))
+				throw new ArgumentException("EmailAddress cannot be empty");
+			if (String.IsNullorEmpty(StudentName))
+				throw new ArgumentException("StudentName cannot be empty");
+			if (String.IsNullorEmpty(RegistrationYear))
+				throw new ArgumentException("RegistrationYear cannot be empty");
+		}
+	}
+	
+	
+
